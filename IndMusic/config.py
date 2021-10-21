@@ -16,7 +16,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 BOT_NAME = getenv("BOT_NAME")
 
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "DaisyXupdates")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Dont leave this")
 
 BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/dcfdf612e499eef0e0b1f.png")
 
@@ -28,15 +28,15 @@ API_HASH = getenv("API_HASH")
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-ASSISTANT_NAME = getenv("ASSISTANT_NAME", "DaisyXhelper")
+ASSISTANT_NAME = getenv("ASSISTANT_NAME")
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "DaisySupport_Official")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP")
 
-PROJECT_NAME = getenv("PROJECT_NAME", "DaisyXMusic v5")
+PROJECT_NAME = getenv("PROJECT_NAME")
 
-SOURCE_CODE = getenv("SOURCE_CODE", "github.com/TeamDaisyX/DaisyXMusic")
+SOURCE_CODE = getenv("SOURCE_CODE")
 
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 
 ARQ_API_KEY = getenv("ARQ_API_KEY", None)
 
