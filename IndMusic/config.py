@@ -18,7 +18,7 @@ BOT_NAME = getenv("BOT_NAME")
 
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Dont leave this")
 
-BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/dcfdf612e499eef0e0b1f.png")
+BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/615c8f52ac62b2a9749fe.jpg")
 
 admins = {}
 
@@ -34,7 +34,7 @@ SUPPORT_GROUP = getenv("SUPPORT_GROUP")
 
 PROJECT_NAME = getenv("PROJECT_NAME")
 
-SOURCE_CODE = getenv("SOURCE_CODE")
+SOURCE_CODE = getenv("SOURCE_CODE", "telegra.ph/file/615c8f52ac62b2a9749fe.jpg")
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 
