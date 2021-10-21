@@ -1,4 +1,4 @@
-from DaisyXMusic.config import ASSISTANT_NAME, PROJECT_NAME
+from IndMusic.config import ASSISTANT_NAME, PROJECT_NAME
 
 
 class Messages:
