@@ -1,9 +1,9 @@
 {
-  "name": "DaisyXMusic",
+  "name": "IndMusic",
   "logo": "https://telegra.ph/file/36ff1b571aa11df5812de.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "description": "Closed-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/TeamDaisyX/DaisyXMusic",
+  "repository": "https://github.com/powerofavenger/ind-music",
   "stack": "container",
   "buildpacks": [
    {
@@ -32,14 +32,14 @@
       "value": ""
     },
     "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "description": "Your MusicPlayer support group without @ ",
       "required": false,
-      "value": "DaisySupport_Official"
+      "value": "fill this"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "DaisyXMusic v5"
+      "value": ""
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -51,14 +51,14 @@
       "value": ""
     },    
     "BG_IMAGE": {
-      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "description": "BG image of bot.",
       "required": false,
-      "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
+      "value": ""
     },     
     "UPDATES_CHANNEL": {
-      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "description": "Updates Channel without @.",
       "required": false,
-      "value": "DaisyXupdates"
+      "value": ""
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
@@ -80,7 +80,7 @@
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
-      "value": "10"
+      "value": "60"
     }
   }
 }
