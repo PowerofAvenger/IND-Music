@@ -2,9 +2,9 @@ import requests
 
 from pyrogram import Client as Bot
 
-from DaisyXMusic.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
+from IndMusic.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 
-from DaisyXMusic.services.callsmusic import run
+from IndMusic.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
 
@@ -24,7 +24,7 @@ bot = Bot(
 
     bot_token=BOT_TOKEN,
 
-    plugins=dict(root="DaisyXMusic.modules"),
+    plugins=dict(root="IndMusic.modules"),
 
 )
 
