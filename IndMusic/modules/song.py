@@ -1,20 +1,3 @@
-# Daisyxmusic (Telegram bot project )
-# Copyright (C) 2021  Inukaasith
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-
 from __future__ import unicode_literals
 
 import asyncio
@@ -35,8 +18,8 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.modules.play import arq
+from IndMusic.config import DURATION_LIMIT
+from IndMusic.modules.play import arq
 
 
 @Client.on_message(filters.command("song") & ~filters.channel)
@@ -55,7 +38,7 @@ def song(client, message):
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
-        # print(results)
+    
         title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f"thumb{title}.jpg"
