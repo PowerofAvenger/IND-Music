@@ -1,0 +1,23 @@
+pyrogram
+tgcrypto
+pytgcalls[pyrogram]==2.0.0.dev4
+python-dotenv
+youtube_dl
+youtube_search_python
+requests
+aiohttp
+aiofiles
+asyncio
+youtube_search
+search_engine_parser
+ffmpeg-python
+pillow
+python-arq
+future
+psutil
+wget
+tswift
+
+# Database
+psycopg2-binary==2.8.6
+sqlalchemy==1.3.20
