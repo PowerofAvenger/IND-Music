@@ -1,20 +1,3 @@
-# Daisyxmusic (Telegram bot project)
-# Copyright (C) 2021  Inukaasith
-# Copyright (C) 2021  TheHamkerCat (Python_ARQ)
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-
 import os
 from os import path
 from typing import Callable
@@ -31,22 +14,22 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
-from DaisyXMusic.config import ARQ_API_KEY
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.function.admins import admins as a
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.filters import command, other_filters
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from IndMusic.config import ARQ_API_KEY
+from IndMusic.config import BOT_NAME as bn
+from IndMusic.config import DURATION_LIMIT
+from IndMusic.config import UPDATES_CHANNEL as updateschannel
+from IndMusic.config import que
+from IndMusic.function.admins import admins as a
+from IndMusic.helpers.admins import get_administrators
+from IndMusic.helpers.channelmusic import get_chat_id
+from IndMusic.helpers.decorators import authorized_users_only
+from IndMusic.helpers.filters import command, other_filters
+from IndMusic.helpers.gets import get_file_name
+from IndMusic.services.callsmusic import callsmusic
+from IndMusic.services.callsmusic import client as USER
+from IndMusic.services.converter.converter import convert
+from IndMusic.services.downloaders import youtube
+from IndMusic.services.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
@@ -560,7 +543,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumb_name = "https://telegra.ph/file/615c8f52ac62b2a9749fe.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -681,13 +664,12 @@ async def play(_, message: Message):
                 ]
             )
             await lel.edit(toxxt, reply_markup=koyboard, disable_web_page_preview=True)
-            # WHY PEOPLE ALWAYS LOVE PORN ?? (A point to think)
+            
             return
-            # Returning to pornhub
+            
         except:
             await lel.edit("No Enough results to choose.. Starting direct play..")
 
-            # print(results)
             try:
                 url = f"https://youtube.com{results[0]['url_suffix']}"
                 title = results[0]["title"][:40]
@@ -943,7 +925,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Satan Music"
+        user.first_name = "I𝗡𝗗𝗜𝗔𝗡 𝗠𝗨𝗦𝗜𝗖"
     usar = user
     wew = usar.id
     try:
@@ -979,7 +961,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add I𝗡𝗗𝗜𝗔𝗡 𝗠𝗨𝗦𝗜𝗖 to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
