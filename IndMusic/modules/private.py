@@ -11,7 +11,7 @@ from IndMusic.config import (
     SUPPORT_GROUP,
     UPDATES_CHANNEL,
 )
-from DaisyXMusic.modules.msg import Messages as tr
+from IndMusic.modules.msg import Messages as tr
 
 logging.basicConfig(level=logging.INFO)
 
